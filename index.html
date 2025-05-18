@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accra Best Deals - Best Electronics in Ghana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- WhatsApp Channel Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <h3>Join Our WhatsApp Channel!</h3>
+            <p>Subscribe to our official WhatsApp channel for:</p>
+            <ul>
+                <li>Exclusive discounts</li>
+                <li>Birthday surprise gifts</li>
+                <li>Flash promotions</li>
+                <li>New product alerts</li>
+            </ul>
+            <a href="https://whatsapp.com/channel/YOUR_CHANNEL_ID" class="whatsapp-btn">Join Channel</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Accra Best Deals</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                    <li><a href="#special-offers">Special Offers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="images/hero1.jpg" alt="Latest Electronics">
+                <div class="slide-content">
+                    <h2>Latest Electronics</h2>
+                    <p>Discover the newest technology at unbeatable prices</p>
+                    <a href="#products" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero2.jpg" alt="Special Offers">
+                <div class="slide-content">
+                    <h2>Special Offers</h2>
+                    <p>Limited time deals on premium electronics</p>
+                    <a href="#special-offers" class="btn">View Offers</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero3.jpg" alt="New Arrivals">
+                <div class="slide-content">
+                    <h2>New Arrivals</h2>
+                    <p>Be the first to get our latest products</p>
+                    <a href="#new-arrivals" class="btn">Explore</a>
+                </div>
+            </div>
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="product-section">
+        <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <div class="products-grid" id="newArrivalsGrid">
+                <!-- Products will be loaded from Netlify CMS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Slider -->
+    <section id="special-offers" class="product-section">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offers-slider" id="specialOffersSlider">
+                <!-- Special offers will be loaded from Netlify CMS -->
+            </div>
+            <div class="slider-controls">
+                <button class="prev-offer"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-offer"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="product-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="featuredProductsGrid">
+                <!-- Products will be loaded from Netlify CMS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Visit Our Store</h2>
+            <div class="location-container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.231069257881!2d-0.17456149999999998!3d5.6797033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a81c8f84411%3A0x3c76f82971c9e2f4!2sAdamantis%20Studios!5e0!3m2!1sen!2sgh!4v1747552902259!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="store-info">
+                    <h3>Adamantis Studios</h3>
+                    <p><i class="fas fa-phone"></i> +233 242799990</p>
+                    <p><i class="fas fa-envelope"></i> info.adamantisstudios@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9am - 6pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Accra Best Deals</h3>
+                    <p>Your trusted source for quality electronics in Ghana.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                        <li><a href="#special-offers">Special Offers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Adamantis Studios, Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 242799990</p>
+                    <p><i class="fas fa-envelope"></i> info.adamantisstudios@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Accra Best Deals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

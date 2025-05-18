@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "_products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "number", value_type: "float"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Additional Image 1", name: "image2", widget: "image", required: false}
+      - {label: "Additional Image 2", name: "image3", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "select", options: ["Smartphones", "TVs", "Audio", "Laptops", "Cameras", "Accessories"]}
+      - {label: "New Arrival", name: "isNewArrival", widget: "boolean", default: false}
+      - {label: "Special Offer", name: "isSpecialOffer", widget: "boolean", default: false}
+      - {label: "In Stock", name: "inStock", widget: "boolean", default: true}
+      - {label: "Specifications", name: "specifications", widget: "object", fields: [
+          {label: "Brand", name: "brand", widget: "string"},
+          {label: "Model", name: "model", widget: "string"},
+          {label: "Warranty", name: "warranty", widget: "string"},
+          {label: "Condition", name: "condition", widget: "string", default: "New"}
+        ]}
+      - {label: "Full Description", name: "body", widget: "markdown"}
